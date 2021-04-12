@@ -294,7 +294,7 @@ var cookieman = (function () {
                     }
                 }
             } else {
-                removeHtmlCookie(cookieName)
+                removeHtmlCookie(itemKey)
             }
             return true
         }
@@ -355,6 +355,10 @@ var cookieman = (function () {
         Cookies.remove(name, {path: ''})
         Cookies.remove(name, {path: '', domain: fullDomain})
         Cookies.remove(name, {path: '', domain: '.' + secondLevelDomain})
+
+        Cookies.remove(name, {path: '/'})
+        Cookies.remove(name, {path: '/', domain: fullDomain})
+        Cookies.remove(name, {path: '/', domain: '.' + secondLevelDomain})
     }
 
     function init() {
