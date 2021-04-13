@@ -38,12 +38,9 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading" role="tab">
                                         <h4 class="panel-title">
-                                            <label>
-
-                                            </label>
                                             <a class="collapsed" role="button" data-toggle="collapse"
                                                data-parent="#cookieman-acco" data-target="#cookieman-acco-{groupId}"
-                                               aria-expanded="true"
+                                               aria-expanded="false"
                                                aria-controls="cookieman-acco-{groupId}">
                                                 {f:translate(key: 'group.{groupId}', default: groupId)}
                                             </a>
@@ -55,16 +52,14 @@
                                                 <div data-cookieman-dnt></div>
                                             </f:if>
                                             <div class="alert alert-info">
-                                                <div class="checkbox-inline">
-                                                    <label>
-                                                        <input type="checkbox"
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox"
                                                                name="{groupId}"
                                                                {f:if(condition: group.preselected, then:
                                                         'checked="checked"')}
                                                         {f:if(condition: group.disabled, then: 'disabled="disabled"')}
                                                         > {f:translate(key: 'group.accept')}
                                                     </label>
-                                                </div>
                                             </div>
                                             <p>
                                                 {f:translate(key: 'group.{groupId}.desc')}
