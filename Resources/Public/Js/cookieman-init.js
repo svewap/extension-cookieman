@@ -6,6 +6,6 @@ if (null !== document.querySelector('[data-cookieman-showonce="1"]')) {
     // wait a bit in order to a) be executed out of the main rendering thread b) give user first impression of page
     setTimeout(
         cookieman.showOnce,
-        2000
+        6000
     )
 }
