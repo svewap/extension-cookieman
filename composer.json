@@ -15,8 +15,8 @@
         "typo3-ter/cookieman": "self.version"
     },
     "require": {
-        "php": "^7.4 || ^8.0",
-        "typo3/cms-core": "^11.5 || ^12 || dev-main"
+        "php": "^8.0",
+        "typo3/cms-core": "^13 || dev-main"
     },
     "require-dev": {
         "browserstack/browserstack-local": "dev-master",
